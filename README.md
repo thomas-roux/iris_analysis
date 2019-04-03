@@ -2,12 +2,12 @@
 Final assignment for 2019, 52445 "Programming and Scripting" module, Higher Diploma in Data Analytics, Galway-Mayo Institute of Technology: examination and analysis of Fisher's Iris Data Set.
 
 # Document Layout
-1. (Who was Fisher?)[https://github.com/thomas-roux/iris_analysis#who-was-fisher]
-2. (What is the Iris Data Set?)[https://github.com/thomas-roux/iris_analysis#what-is-the-iris-data-set]
-3. (What does it containt?)[https://github.com/thomas-roux/iris_analysis#what-does-it-contain]
-4. (Findings of Interest)[https://github.com/thomas-roux/iris_analysis#findings-of-interest]
-5. (What others have done with the data set)[https://github.com/thomas-roux/iris_analysis#what-others-have-done-with-the-data-set]
-6. (Conclusion)[https://github.com/thomas-roux/iris_analysis#conclusion]
+1. [Who was Fisher?](https://github.com/thomas-roux/iris_analysis#who-was-fisher)
+2. [What is the Iris Data Set?](https://github.com/thomas-roux/iris_analysis#what-is-the-iris-data-set)
+3. [What does it containt?](https://github.com/thomas-roux/iris_analysis#what-does-it-contain)
+4. [Findings of Interest](https://github.com/thomas-roux/iris_analysis#findings-of-interest)
+5. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#what-others-have-done-with-the-data-set)
+6. [Conclusion](https://github.com/thomas-roux/iris_analysis#conclusion)
 
 
 ## 1. Who was Fisher?
