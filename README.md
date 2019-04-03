@@ -2,8 +2,15 @@
 Final assignment for 2019, 52445 "Programming and Scripting" module, Higher Diploma in Data Analytics, Galway-Mayo Institute of Technology: examination and analysis of Fisher's Iris Data Set.
 
 # Document Layout
+1. (Who was Fisher?)[https://github.com/thomas-roux/iris_analysis#who-was-fisher]
+2. (What is the Iris Data Set?)[https://github.com/thomas-roux/iris_analysis#what-is-the-iris-data-set]
+3. (What does it containt?)[https://github.com/thomas-roux/iris_analysis#what-does-it-contain]
+4. (Findings of Interest)[https://github.com/thomas-roux/iris_analysis#findings-of-interest]
+5. (What others have done with the data set)[https://github.com/thomas-roux/iris_analysis#what-others-have-done-with-the-data-set]
+6. (Conclusion)[https://github.com/thomas-roux/iris_analysis#conclusion]
 
-## Who was Fisher?
+
+## 1. Who was Fisher?
 Ronald Aylmer Fisher was born in London, England in 1890. He went on to become a prolific author in statistics and genetics, with over 400 academic papers, and many advances in the field of statistics attributed to his name. Some of his key discoveries are noted below:
 
 * 1912 -	Established that a sample mean is different from a population mean
@@ -25,11 +32,11 @@ Sir Ronald Aylmer Fisher died in 1962, having rightly earned himself a place as 
 - https://www.famousscientists.org/ronald-fisher/ [Accessed 2 April 2019]
 - Owen, ARG. (1962) 'An Appreciation of the Life and Work of Sir Ronald Aylmer Fisher', *Journal of the Royal Statistical    Society.   Series D (The Statistician)*, Vol. 12, No. 4, pp. 313-319
 
-## What is the Iris Data Set?
+## 2. What is the Iris Data Set?
 
-## What does it contain?
+## 3. What does it contain?
 
-## Findings of interest
+## 4. Findings of interest
 
 ### Python Script
 #### What it needs
@@ -37,12 +44,9 @@ Sir Ronald Aylmer Fisher died in 1962, having rightly earned himself a place as 
 
 ### Results
 
-## What others have done with the data set
+## 5. What others have done with the data set
 
-## Conclusion
-
-## References
+## 6. Conclusion
 
 ## Author
 
-## Contributors
