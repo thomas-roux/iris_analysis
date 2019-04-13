@@ -33,6 +33,7 @@ Sir Ronald Aylmer Fisher died in 1962, having rightly earned himself a place as 
 - Owen, ARG. (1962) 'An Appreciation of the Life and Work of Sir Ronald Aylmer Fisher', *Journal of the Royal Statistical    Society.   Series D (The Statistician)*, Vol. 12, No. 4, pp. 313-319
 
 ## 2. What is the Iris Data Set?
+Imported from curran gihub [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv)
 
 ## 3. What does it contain?
 
