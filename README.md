@@ -4,7 +4,7 @@ Final assignment for 2019, 52445 "Programming and Scripting" module, Higher Dipl
 # Document Layout
 1. [Who was Fisher?](https://github.com/thomas-roux/iris_analysis#who-was-fisher)
 2. [What is the Iris Data Set?](https://github.com/thomas-roux/iris_analysis#what-is-the-iris-data-set)
-3. [What does it containt?](https://github.com/thomas-roux/iris_analysis#what-does-it-contain)
+3. [What does it contain?](https://github.com/thomas-roux/iris_analysis#what-does-it-contain)
 4. [Findings of Interest](https://github.com/thomas-roux/iris_analysis#findings-of-interest)
 5. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#what-others-have-done-with-the-data-set)
 6. [Conclusion](https://github.com/thomas-roux/iris_analysis#conclusion)
@@ -36,19 +36,26 @@ Sir Ronald Aylmer Fisher died in 1962, having rightly earned himself a place as 
 The Iris Data Set was first used by Fisher in his 1936 [publication](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x) 'The Use of Multiple Measurements in Taxonomic Problems' in *Annals of Human Genetics*, Vol 7, Issue 2, pg179-188, where Fisher used the data as an example of linear function discriminatio. Although Fisher spent time conducting plant-breeding expirements at the Rothamsted Experimental Station, he did not collect this data himself, but rather made use of data collected by [Dr E Anderson](https://en.wikipedia.org/wiki/Edgar_Anderson). 
 
 The Iris Data Set, hereafter abbreviated to ISD, consists of measurements on three variations of iris flower: 
+
 *Iris Setosa* 
 ![I. Setosa](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Irissetosa1.jpg/800px-Irissetosa1.jpg) 
+
 *Iris Versicolor* 
 ![I. Versicolor](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Iris_versicolor_4.jpg/1600px-Iris_versicolor_4.jpg) 
-and *Iris Virginica* 
+
+*Iris Virginica* 
 ![I. Virginica](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/1472px-Iris_virginica.jpg)
 
 For each flower, 4 measurements were taken: sepal length, sepal width, petal length and petal width. The following diagram identifies these parts of the Iris flower (Sourc: USDA Forest Service) 
+
 ![Parts of Iris Flower](https://www.fs.fed.us/wildflowers/beauty/iris/images/blueflagiris_flower_lg.jpg)
+
 Fifty flowers of each type were measured, giving a total IDS size of 150 observations. 
 
-According to [Fisher](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x): 
+According to [Fisher](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x):
+ 
 >there is some overlap of the distributions of *I. wirginica* and *I. versicolor*, so that a certain diagnosis of these two species could not be based solely on these four measurements of a single flower (pg. 187).
+
 Indeed, it is this clustering of the IDS into two distinct clusters (*I. virginica* and *I. versicolor*, and *I. setosa*) that makes this a useful data set for [explaining](https://en.wikipedia.org/wiki/Iris_flower_data_set#cite_note-anderson35-3) data mining techniques. 
 
 ## 3. What does it contain?
