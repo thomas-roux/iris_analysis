@@ -37,20 +37,20 @@ The Iris Data Set was first used by Fisher in his 1936 [publication](https://onl
 
 The Iris Data Set, hereafter abbreviated to ISD, consists of measurements on three variations of iris flower: 
 
-*Iris Setosa* 
+__*Iris Setosa*__
 
 ![I. Setosa](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Irissetosa1.jpg/800px-Irissetosa1.jpg) 
 
-*Iris Versicolor* 
+__*Iris Versicolor*__
 
 ![I. Versicolor](https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Iris_versicolor_4.jpg/1600px-Iris_versicolor_4.jpg) 
 
-*Iris Virginica* 
+__*Iris Virginica*__
 
 ![I. Virginica](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/1472px-Iris_virginica.jpg)
 
 
-For each flower, 4 measurements were taken: sepal length, sepal width, petal length and petal width. The following diagram identifies these parts of the Iris flower (Sourc: USDA Forest Service) 
+For each flower, 4 measurements were taken: sepal length, sepal width, petal length and petal width. The following diagram identifies these parts of the Iris flower (Source: USDA Forest Service) 
 
 ![Parts of Iris Flower](https://www.fs.fed.us/wildflowers/beauty/iris/images/blueflagiris_flower_lg.jpg)
 
@@ -58,14 +58,14 @@ Fifty flowers of each type were measured, giving a total IDS size of 150 observa
 
 According to [Fisher](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x):
 
->there is some overlap of the distributions of *I. wirginica* and *I. versicolor*, so that a certain diagnosis of these two species could not be based solely on these four measurements of a single flower (pg. 187).
+>there is some overlap of the distributions of *I. virginica* and *I. versicolor*, so that a certain diagnosis of these two species could not be based solely on these four measurements of a single flower (pg. 187).
 
 Indeed, it is this clustering of the IDS into two distinct clusters (*I. virginica* and *I. versicolor*, and *I. setosa*) that makes this a useful data set for [explaining](https://en.wikipedia.org/wiki/Iris_flower_data_set#cite_note-anderson35-3) data mining techniques. 
 
 ## 3. What does it contain?
 As already mentioned, the IDS contains 600 data points: 4 measurements for 50 flowers across 3 plant species (4 x 50 x 3 = 600). The data set from Fisher's original paper is presented below:
 
-![Original Iris Data Set]()
+![Original Iris Data Set](iris_data_table.png)
 Imported from curran gihub [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv)
 
 ## 4. Findings of interest
