@@ -5,6 +5,7 @@
 # Import necessary modules
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 
 # Increases output display
 # https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html
@@ -23,3 +24,6 @@ print(data.describe())
 # Prints descriptive stats of each variable, grouped by species
 print("\nDescriptive stats, grouped by species")
 print(data.groupby('species').describe())
+
+data.groupby('species').plot.hist()
+plt.show()
