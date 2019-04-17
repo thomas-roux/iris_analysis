@@ -2,12 +2,12 @@
 Final assignment for 2019, 52445 "Programming and Scripting" module, Higher Diploma in Data Analytics, Galway-Mayo Institute of Technology: examination and analysis of Fisher's Iris Data Set.
 
 # Document Layout
-1. [Who was Fisher?](https://github.com/thomas-roux/iris_analysis#who-was-fisher)
-2. [What is the Iris Data Set?](https://github.com/thomas-roux/iris_analysis#what-is-the-iris-data-set)
-3. [What does it contain?](https://github.com/thomas-roux/iris_analysis#what-does-it-contain)
-4. [Findings of Interest](https://github.com/thomas-roux/iris_analysis#findings-of-interest)
-5. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#what-others-have-done-with-the-data-set)
-6. [Conclusion](https://github.com/thomas-roux/iris_analysis#conclusion)
+1. [Who was Fisher?](https://github.com/thomas-roux/iris_analysis#1-who-was-fisher)
+2. [What is the Iris Data Set?](https://github.com/thomas-roux/iris_analysis#2-what-is-the-iris-data-set)
+3. [What does it contain?](https://github.com/thomas-roux/iris_analysis#3-what-does-it-contain)
+4. [Findings of Interest](https://github.com/thomas-roux/iris_analysis#4-findings-of-interest)
+5. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#5-what-others-have-done-with-the-data-set)
+6. [Conclusion](https://github.com/thomas-roux/iris_analysis#6-conclusion)
 
 
 ## 1. Who was Fisher?
@@ -66,6 +66,7 @@ Indeed, it is this clustering of the IDS into two distinct clusters (*I. virgini
 As already mentioned, the IDS contains 600 data points: 4 measurements for 50 flowers across 3 plant species (4 x 50 x 3 = 600). The data set from Fisher's original paper is presented below:
 
 ![Original Iris Data Set](iris_data_table.png)
+
 Imported from curran gihub [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv)
 
 ## 4. Findings of interest
