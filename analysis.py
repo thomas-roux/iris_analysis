@@ -25,5 +25,5 @@ print(data.describe())
 print("\nDescriptive stats, grouped by species")
 print(data.groupby('species').describe())
 
-data.groupby('species').plot.hist()
-plt.show()
+#data.groupby('species').plot.hist()
+#plt.show()
