@@ -33,7 +33,7 @@ Sir Ronald Aylmer Fisher died in 1962, having rightly earned himself a place as 
 - Owen, ARG. (1962) 'An Appreciation of the Life and Work of Sir Ronald Aylmer Fisher', *Journal of the Royal Statistical    Society.   Series D (The Statistician)*, Vol. 12, No. 4, pp. 313-319
 
 ## 2. What is the Iris Data Set?
-The Iris Data Set was first used by Fisher in his 1936 [publication](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x) 'The Use of Multiple Measurements in Taxonomic Problems' in *Annals of Human Genetics*, Vol 7, Issue 2, pg179-188, where Fisher used the data as an example of linear function discriminatio. Although Fisher spent time conducting plant-breeding expirements at the Rothamsted Experimental Station, he did not collect this data himself, but rather made use of data collected by [Dr E Anderson](https://en.wikipedia.org/wiki/Edgar_Anderson). 
+The Iris Data Set was first used by Fisher in his 1936 [publication](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x) 'The Use of Multiple Measurements in Taxonomic Problems' in *Annals of Human Genetics*, Vol 7, Issue 2, pg179-188, where Fisher used the data as an example of linear function discrimination. Although Fisher spent time conducting plant-breeding expirements at the Rothamsted Experimental Station, he did not collect this data himself, but rather made use of data collected by [Dr E Anderson](https://en.wikipedia.org/wiki/Edgar_Anderson). 
 
 The Iris Data Set, hereafter abbreviated to ISD, consists of measurements on three variations of iris flower: 
 
@@ -50,29 +50,29 @@ __*Iris Virginica*__
 ![I. Virginica](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Iris_virginica.jpg/1472px-Iris_virginica.jpg)
 
 
-For each flower, 4 measurements were taken: sepal length, sepal width, petal length and petal width. The following diagram identifies these parts of the Iris flower (Source: USDA Forest Service) 
-
+For each flower, 4 measurements were taken: sepal length, sepal width, petal length and petal width. Fifty flowers of each type were measured, giving a total IDS size of 150 observations. The following diagram identifies the parts of an Iris flower (Source: USDA Forest Service) 
+ 
 ![Parts of Iris Flower](https://www.fs.fed.us/wildflowers/beauty/iris/images/blueflagiris_flower_lg.jpg)
 
-Fifty flowers of each type were measured, giving a total IDS size of 150 observations. 
-
-According to [Fisher](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x):
+To the eye, there does not appear to be much difference between the iris flower configurations in the images. However, based on measurements, these three species of Iris flowers can be clustered into two groups: *I. virginica* and *I. versicolor* in one cluster, and *I. setosa* in the other. According to [Fisher](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x):
 
 >there is some overlap of the distributions of *I. virginica* and *I. versicolor*, so that a certain diagnosis of these two species could not be based solely on these four measurements of a single flower (pg. 187).
 
-Indeed, it is this clustering of the IDS into two distinct clusters (*I. virginica* and *I. versicolor*, and *I. setosa*) that makes this a useful data set for [explaining](https://en.wikipedia.org/wiki/Iris_flower_data_set#cite_note-anderson35-3) data mining techniques. 
+It is this grouping of the IDS into two distinct clusters that makes this a useful data set for [explaining](https://en.wikipedia.org/wiki/Iris_flower_data_set#cite_note-anderson35-3) data mining techniques. 
 
 ## 3. What does it contain?
-As already mentioned, the IDS contains 600 data points: 4 measurements for 50 flowers across 3 plant species (4 x 50 x 3 = 600). The data set from Fisher's original paper is presented below:
+As already mentioned, the IDS contains 4 measurements for 50 flowers across 3 plant species, giving a total of 600 data points (4 x 50 x 3 = 600). The data set from Fisher's original paper is presented below:
 
 ![Original Iris Data Set](iris_data_table.png)
 
-Imported from curran gihub [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv)
+Imported from curran github [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv)
 
 ## 4. Findings of interest
+This next section will look at the Python script used to analyse the data, as well as some results of the analysis. The data set used for this analysis was downloaded from curran's github [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv).
 
 ### Python Script
 #### What it needs
+
 #### What it does
 
 ### Results
