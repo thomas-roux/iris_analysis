@@ -49,7 +49,7 @@ for name, group in grouped:
     for column in group:
         if column == 'species':
             continue
-        x = data[column]
+        x = group[column]
         sb.distplot(x, bins = 10)
         plt.show()
 
