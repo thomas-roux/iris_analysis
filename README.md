@@ -61,7 +61,7 @@ To the eye, there does not appear to be much difference between the iris flower 
 It is this grouping of the IDS into two distinct clusters that makes this a useful data set for [explaining](https://en.wikipedia.org/wiki/Iris_flower_data_set#cite_note-anderson35-3) data mining techniques. 
 
 ## 3. What does it contain?
-As already mentioned, the IDS contains 4 measurements for 50 flowers across 3 plant species, giving a total of 600 data points (4 x 50 x 3 = 600). The data set from Fisher's original paper is presented below:
+As already mentioned, the IDS contains 4 measurements for 50 flowers across 3 plant species, giving a total of 600 data points (4 x 50 x 3 = 600). Apart from species name, which is nominal data, all other data is interval data. The data set from Fisher's original paper is presented below:
 
 ![Original Iris Data Set](iris_data_table.png)
 
@@ -70,7 +70,7 @@ This next section will look at the Python script used to analyse the data, as we
 
 ### Python Script
 #### What it needs
-In order to run the Python script, you will need to install Python. Python is freely available, and details on how to install and run Python on your native OS are available [here](https://docs.python.org/3/using/index.html). In addition, you will need to download and install [pandas](http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas), [NumPy](http://www.numpy.org/), and [matplotlib](https://matplotlib.org/users/installing.html). 
+In order to run the Python script, you will need to install Python. Python is freely available, and details on how to install and run Python on your native OS are available [here](https://docs.python.org/3/using/index.html). In addition, you will need to download and install [pandas](http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas), [NumPy](http://www.numpy.org/), and [matplotlib](https://matplotlib.org/users/installing.html).
 
 Alternatively, you can download the free open-source [Anaconda Distribution](https://www.anaconda.com/distribution/) package that includes over 1,500 packages in addition to the latest version of Python. This would preclude the need to download additional packages as mentioned above.
 
@@ -80,19 +80,17 @@ data = pd.read_csv('data/irisdataset.csv', delimiter = ',')
 ```
 
 #### What it does
-First, the program determines if there is any missing data. It does this by identiyfing any blank spaces, words or letters where measurements should be. In addition, it determines if there are any measurements of zero (0) or 999, figures often used to denote missing data.
+First, the program determines if there is any missing data by identifying standard terms used by pandas for each variable. 
 
 The program then prints the following descriptive statistics:
-- mean 
+- mean  
 - standard deviation 
 - minimum
 - maximum
 - quartiles 
 of the whole sample and of each Iris species. In addition, it plots a histogram of both the entire sample and each Iris species in turn. These descriptive statistics can then be used to make an informed decision on normality of data distribution.
 
-Next, t-test of means between groups
-Then, scatterplot between sepal length and width for sample and ind species; again for petal width and length (likely correlated, as same part of flower)
-Then, correlation matrix of all four variables for whole sample, and each individual species
+The program then displays a scatterplot of sepal length to sepal width, and petal length to petal width for the entire sample, and again for each species in turn. Finally, a correlation matrix of each variable for the entire sample, and between each species, is determined. 
 
 ### Results
 
