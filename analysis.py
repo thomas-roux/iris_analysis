@@ -36,7 +36,7 @@ print(data.groupby('species').describe())
 # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.hist.html
 for column in data:
     if column == 'species':
-        exit()
+        continue
     x = data[column]
     sb.distplot(x, bins = 10)
     plt.show()
@@ -52,5 +52,6 @@ for name, group in grouped:
         x = group[column]
         sb.distplot(x, bins = 10)
         plt.show()
+
 
 
