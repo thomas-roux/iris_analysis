@@ -6,7 +6,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-import scipy.stats as stats
+import seaborn as sb
 
 # Increases output display to show all columns and rows
 # https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html
@@ -34,12 +34,23 @@ print(data.groupby('species').describe())
 
 # Prints a histogram of each variable for the whole sample
 # https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.hist.html
-data.plot.hist(alpha = 0.5)
-plt.show()
+for column in data:
+    if column == 'species':
+        exit()
+    x = data[column]
+    sb.distplot(x, bins = 10)
+    plt.show()
 
 # Prints a histogram of each variable, grouped by species
-data.groupby('species').plot.box()
-plt.show()
-
+# http://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html#iterating-through-groups
+grouped = data.groupby(['species'])
+for name, group in grouped:
+    print(name)
+    for column in group:
+        if column == 'species':
+            continue
+        x = data[column]
+        sb.distplot(x, bins = 10)
+        plt.show()
 
 

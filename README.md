@@ -70,7 +70,7 @@ This next section will look at the Python script used to analyse the data, as we
 
 ### Python Script
 #### What it needs
-In order to run the Python script, you will need to install Python. Python is freely available, and details on how to install and run Python on your native OS are available [here](https://docs.python.org/3/using/index.html). In addition, you will need to download and install [pandas](http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas), [NumPy](http://www.numpy.org/), and [matplotlib](https://matplotlib.org/users/installing.html).
+In order to run the Python script, you will need to install Python. Python is freely available, and details on how to install and run Python on your native OS are available [here](https://docs.python.org/3/using/index.html). In addition, you will need to download and install [pandas](http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas), [NumPy](http://www.numpy.org/), [matplotlib](https://matplotlib.org/users/installing.html), and [seaborn](https://seaborn.pydata.org/index.html)
 
 Alternatively, you can download the free open-source [Anaconda Distribution](https://www.anaconda.com/distribution/) package that includes over 1,500 packages in addition to the latest version of Python. This would preclude the need to download additional packages as mentioned above.
 
@@ -88,7 +88,7 @@ The program then prints the following descriptive statistics:
 - minimum
 - maximum
 - quartiles 
-of the whole sample and of each Iris species. In addition, it plots a histogram of both the entire sample and each Iris species in turn. These descriptive statistics can then be used to make an informed decision on normality of data distribution.
+of the whole sample and of each Iris species. In addition, it plots a histogram with distribution curve of all variables for both the entire sample and each Iris species in turn. These descriptive statistics can then be used to make an informed decision on normality of data distribution for further inferential statistics.
 
 The program then displays a scatterplot of sepal length to sepal width, and petal length to petal width for the entire sample, and again for each species in turn. Finally, a correlation matrix of each variable for the entire sample, and between each species, is determined. 
 
