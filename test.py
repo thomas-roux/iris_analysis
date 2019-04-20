@@ -18,19 +18,12 @@ pd.options.display.max_columns = 999
 data = pd.read_csv('data/irisdataset.csv', delimiter = ',')
 
 # Plot pairplot table
-#sb.pairplot(data)
-#plt.show()
+grouped = data.groupby(['species'])
+for name, group in grouped:
+    sb.pairplot(group)
+    plt.show()
 
 # Plot box whiskers
 # sb.catplot(x = "species", y = "sepal_length", kind = box, data = data)
 # plt.show()
 
-grouped = data.groupby(['species'])
-for name, group in grouped:
-    print(name)
-    for column in group:
-        if column == 'species':
-            continue
-        x = group[column]
-        sb.distplot(x, bins = 10)
-        plt.show()

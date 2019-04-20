@@ -53,5 +53,13 @@ for name, group in grouped:
         sb.distplot(x, bins = 10)
         plt.show()
 
+# Displays a scatterplot of all variables with each other for whole sample
+# https://seaborn.pydata.org/tutorial/distributions.html#visualizing-pairwise-relationships-in-a-dataset
+sb.pairplot(data)
+plt.show()
 
-
+# Displays a scatterplot of all variables with each other, grouped by species
+grouped = data.groupby(['species'])
+for name, group in grouped:
+    sb.pairplot(group)
+    plt.show()
