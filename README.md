@@ -90,9 +90,10 @@ The program then prints the following descriptive statistics:
 - quartiles 
 of the whole sample and of each Iris species. In addition, it plots a histogram with distribution curve of all variables for both the entire sample and each Iris species in turn. These descriptive statistics can then be used to make an informed decision on normality of data distribution for further inferential statistics.
 
-The program then displays a scatterplot of sepal length to sepal width, and petal length to petal width for the entire sample, and again for each species in turn. Finally, a correlation matrix of each variable for the entire sample, and between each species, is determined. 
+The program then displays a scatterplot of all variables to one another for the whole sample, and again for each species in turn. Finally, a correlation matrix of each variable for the entire sample, and between each species, is determined. 
 
 ### Results
+
 
 ## 5. What others have done with the data set
 

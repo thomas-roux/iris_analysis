@@ -38,7 +38,10 @@ for column in data:
     if column == 'species':
         continue
     x = data[column]
-    sb.distplot(x, bins = 10)
+    sb.distplot(x, bins = 10, kde = False)
+    plt.title("Histogram of whole sample, " + str(column))
+    plt.xlabel(str(column) + " in centimetres.")
+    plt.ylabel("Count")
     plt.show()
 
 # Prints a histogram of each variable, grouped by species
@@ -50,16 +53,39 @@ for name, group in grouped:
         if column == 'species':
             continue
         x = group[column]
-        sb.distplot(x, bins = 10)
+        sb.distplot(x, bins = 10, kde = False)
+        plt.title("Histogram of Iris " + str(name) + "'s " + str(column))
+        plt.xlabel(str(column) + " in centimetres.")
+        plt.ylabel("Count")
         plt.show()
 
-# Displays a scatterplot of all variables with each other for whole sample
-# https://seaborn.pydata.org/tutorial/distributions.html#visualizing-pairwise-relationships-in-a-dataset
-sb.pairplot(data)
-plt.show()
+# Displays a scatterplot of all variables with each other for whole sample, species color differentiated
+# https://seaborn.pydata.org/examples/scatterplot_matrix.html
+# Title added to top of diagram
+# https://stackoverflow.com/questions/29813694/how-to-add-a-title-to-seaborn-facet-plot
+g = sb.pairplot(data = data, hue = "species")
+plt.subplots_adjust(top=0.9)
+g.fig.suptitle("Pairplot of variables, whole sample")
+plt.show(g)
 
 # Displays a scatterplot of all variables with each other, grouped by species
+# https://seaborn.pydata.org/tutorial/distributions.html#visualizing-pairwise-relationships-in-a-dataset
 grouped = data.groupby(['species'])
 for name, group in grouped:
-    sb.pairplot(group)
-    plt.show()
+    a = sb.pairplot(group)
+    plt.subplots_adjust(top=0.9)
+    a.fig.suptitle("Pairplot of variables, " + str(name))
+    plt.show(a)
+
+# Presents a correlation matrix of each variable for whole sample
+# https://pythonprogramming.net/pandas-statistics-correlation-tables-how-to/
+print("Correlation atrix of whole sample variables")
+print(data.corr())
+print()
+
+# Presents a correlation matrix of each variable, grouped by species
+grouped = data.groupby(['species'])
+for name, group in grouped:
+    print("Correlation matrix of Iris " + str(name) + "'s variables.")
+    print(group.corr())
+    print()
