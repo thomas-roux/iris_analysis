@@ -70,7 +70,6 @@ plt.show(g)
 
 # Displays a scatterplot of all variables with each other, grouped by species
 # https://seaborn.pydata.org/tutorial/distributions.html#visualizing-pairwise-relationships-in-a-dataset
-grouped = data.groupby(['species'])
 for name, group in grouped:
     a = sb.pairplot(group)
     plt.subplots_adjust(top=0.9)
@@ -84,7 +83,6 @@ print(data.corr())
 print()
 
 # Presents a correlation matrix of each variable, grouped by species
-grouped = data.groupby(['species'])
 for name, group in grouped:
     print("Correlation matrix of Iris " + str(name) + "'s variables.")
     print(group.corr())
