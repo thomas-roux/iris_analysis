@@ -11,7 +11,7 @@ import os
 
 # Create a subdirectory for images
 # https://smallbusiness.chron.com/make-folders-subfolders-python-38545.html
-# os.mkdir('images')
+os.mkdir('images')
 
 # Increases output display to show all columns and rows
 # https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html
@@ -47,7 +47,7 @@ for column in data:
     plt.title("Histogram of whole sample, " + str(column))
     plt.xlabel(str(column) + " in centimetres.")
     plt.ylabel("Count")
-    # plt.savefig('images/{}'.format(str(column)))
+    plt.savefig('images/{}'.format(str(column)))
     plt.show()
 
 # Prints a histogram of each variable, grouped by species
@@ -63,7 +63,7 @@ for name, group in grouped:
         plt.title("Histogram of Iris " + str(name) + "'s " + str(column))
         plt.xlabel(str(column) + " in centimetres.")
         plt.ylabel("Count")
-        # plt.savefig('images/{}'.format(str(name) + str(column)))
+        plt.savefig('images/{}'.format(str(name) + str(column)))
         plt.show()
         
 
@@ -74,7 +74,7 @@ for name, group in grouped:
 g = sb.pairplot(data = data, hue = "species")
 plt.subplots_adjust(top=0.9)
 g.fig.suptitle("Pairplot of variables, whole sample")
-# plt.savefig('images/pairplotall.png')
+plt.savefig('images/pairplotall.png')
 plt.show(g)
 
 # Displays a scatterplot of all variables with each other, grouped by species
@@ -83,7 +83,7 @@ for name, group in grouped:
     a = sb.pairplot(group)
     plt.subplots_adjust(top=0.9)
     a.fig.suptitle("Pairplot of variables, " + str(name))
-    # plt.savefig('images/{}'.format(str(name)))
+    plt.savefig('images/{}'.format(str(name)))
     plt.show(a)
 
 # Presents a correlation matrix of each variable for whole sample
