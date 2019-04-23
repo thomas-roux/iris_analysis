@@ -79,6 +79,18 @@ Before running the script in Python, make sure you have downloaded the IDS from 
 data = pd.read_csv('data/irisdataset.csv', delimiter = ',')
 ```
 
+The code automatically creates a subdirectoy '/images' when saving images. At the outset, the code is set up not to save images - a hashtag before the following code lines needs to be removed before images will be saved:
+
+Line 13:
+```python
+os.mkidr('images')
+```
+
+Lines 50, 66, 77, 86:
+```python
+plt.savefig('images/<filename>')
+```
+
 #### What it does
 First, the program determines if there is any missing data by identifying standard terms used by pandas for each variable. 
 
@@ -91,6 +103,8 @@ The program then prints the following descriptive statistics:
 of the whole sample and of each Iris species. In addition, it plots a histogram with distribution curve of all variables for both the entire sample and each Iris species in turn. These descriptive statistics can then be used to make an informed decision on normality of data distribution for further inferential statistics.
 
 The program then displays a scatterplot of all variables to one another for the whole sample, and again for each species in turn. Finally, a correlation matrix of each variable for the entire sample, and between each species, is determined. 
+
+All images created are saved into a subdirectory 'images' if the necessary code is active (see above).
 
 ### Results
 
