@@ -72,16 +72,16 @@ A 'results.txt' file contains all the output as displayed on the terminal when r
 
 ### Python Script
 #### What it needs
-In order to run the Python script, you will need to install Python. Python is freely available, and details on how to install and run Python on your native OS are available [here](https://docs.python.org/3/using/index.html). In addition, you will need to download and install [pandas](http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas), [NumPy](http://www.numpy.org/), [matplotlib](https://matplotlib.org/users/installing.html), and [seaborn](https://seaborn.pydata.org/index.html)
+In order to run the Python script, you will need to install Python. Python is freely available, and details on how to install and run Python on your native OS are available [here](https://docs.python.org/3/using/index.html). In addition, you will need to download and install [pandas](http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas), [NumPy](http://www.numpy.org/), [matplotlib](https://matplotlib.org/users/installing.html), and [seaborn](https://seaborn.pydata.org/index.html).
 
 Alternatively, you can download the free open-source [Anaconda Distribution](https://www.anaconda.com/distribution/) package that includes over 1,500 packages in addition to the latest version of Python. This would preclude the need to download additional packages as mentioned above.
 
-Before running the script in Python, make sure you have downloaded the IDS from curran's github [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv). Save the dataset as **irisdataset.csv** in a subfolder **data** within the same folder as the script to ensure it executes correctly. If you prefer, you can save the dataset in any folder with any ***.csv** filename - just make sure to change the destination folder in line 18 of the analysis.py script before proceeding:
+Before running the script in Python, make sure you have downloaded the IDS from curran's github [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv). Save the dataset as **irisdataset.csv** in a subfolder **data** within the same folder as the script to ensure it executes correctly. If you prefer, you can save the dataset in any folder with any ***.csv** filename - just make sure to change the destination folder in line 24 of the analysis.py script before proceeding:
 ```python
 data = pd.read_csv('data/irisdataset.csv', delimiter = ',')
 ```
 
-The code automatically creates a subdirectoy '/images' when saving images. At the outset, the code is set up not to save images - a hashtag before the following code lines needs to be removed before images will be saved:
+The code automatically creates an **'/images** subdirectory when saving images. At the outset, the code is set up not to save images - a hashtag before the following code lines needs to be removed before images will be saved:
 
 Line 13:
 ```python
@@ -106,7 +106,7 @@ of the whole sample and of each Iris species. In addition, it plots a histogram 
 
 The program then displays a scatterplot of all variables to one another for the whole sample, and again for each species in turn. Finally, a correlation matrix of each variable for the entire sample, and between each species, is determined. 
 
-All images created are saved into a '/images' subdirectory if the necessary code is active (see above).
+All images created are saved into an **'/images'** subdirectory if the necessary code is active (see above).
 
 ### Results
 
