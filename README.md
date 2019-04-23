@@ -66,7 +66,9 @@ As already mentioned, the IDS contains 4 measurements for 50 flowers across 3 pl
 ![Original Iris Data Set](iris_data_table.png)
 
 ## 4. Findings of interest
-This next section will look at the Python script used to analyse the data, as well as some results of the analysis. The data set used for this analysis was downloaded from curran's github [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv).
+This next section will look at the Python script used to analyse the data, as well as some results of the analysis. The data set used for this analysis was downloaded from curran's github [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv). 
+
+A 'results.txt' file contains all the output as displayed on the terminal when running the program. This was created by using the `open()` function as explained [here](https://stackoverflow.com/a/36571602). The `file=f` statements have subsequently been removed from the program script.
 
 ### Python Script
 #### What it needs
@@ -86,7 +88,7 @@ Line 13:
 os.mkidr('images')
 ```
 
-Lines 50, 66, 77, 86:
+Lines 52, 68, 79, 88:
 ```python
 plt.savefig('images/<filename>')
 ```
@@ -104,7 +106,7 @@ of the whole sample and of each Iris species. In addition, it plots a histogram 
 
 The program then displays a scatterplot of all variables to one another for the whole sample, and again for each species in turn. Finally, a correlation matrix of each variable for the entire sample, and between each species, is determined. 
 
-All images created are saved into a subdirectory 'images' if the necessary code is active (see above).
+All images created are saved into a '/images' subdirectory if the necessary code is active (see above).
 
 ### Results
 
