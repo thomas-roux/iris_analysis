@@ -6,10 +6,10 @@ Final assignment for 2019, 52445 "Programming and Scripting" module, Higher Dipl
 2. [What is the Iris Data Set?](https://github.com/thomas-roux/iris_analysis#2-what-is-the-iris-data-set)
 3. [What does it contain?](https://github.com/thomas-roux/iris_analysis#3-what-does-it-contain)
 4. [Findings of Interest](https://github.com/thomas-roux/iris_analysis#4-findings-of-interest)
-5. [Discussion](https://github.com/thomas-roux/iris_analysis#4-discussion)
-6. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#5-what-others-have-done-with-the-data-set)
-7. [Conclusion](https://github.com/thomas-roux/iris_analysis#6-conclusion)
-8. [References](https://github.com/thomas-roux/iris_analysis#6-references)
+5. [Discussion](https://github.com/thomas-roux/iris_analysis#5-discussion)
+6. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#6-what-others-have-done-with-the-data-set)
+7. [Conclusion](https://github.com/thomas-roux/iris_analysis#7-conclusion)
+8. [References](https://github.com/thomas-roux/iris_analysis#8-references)
 
 
 ## 1. Who was Fisher?
@@ -101,9 +101,11 @@ The program then prints the following descriptive statistics:
 - quartiles 
 of the whole sample and of each Iris species. In addition, it plots a histogram of all variables for the entire sample. It also plots a boxplot of each variable across each Iris species in turn. These descriptive statistics can then be used to make an informed decision on normality of data distribution for further inferential statistics.
 
-The program then displays a scatterplot of all variables to one another for the whole sample, and again for each species in turn. Finally, a correlation matrix of each variable for the entire sample, and between each species, is determined. 
+The program then displays a scatterplot of all variables to one another for the whole sample, and again for each species in turn. Finally, a Pearson correlation matrix of each variable for the entire sample, and between each species, is determined. 
 
 All images created are saved into an **'/images'** subdirectory if the necessary code is active (see above).
+
+---
 
 ### Results
 As already mentioned, there are 5 data points for each observation, totalling 750 data points in total for all 150 observations. The initial check to show whether any data is missing reveals that all data points are present:
@@ -187,6 +189,8 @@ The descriptive statistices grouped by plant species are as follows:
 |SD   |   0.6  |  0.3 |   0.6  |   0.3
 |Min  |   4.9  |  2.2 |   4.5  |   1.4
 |Max  |   7.9  |  3.8 |   6.9  |   2.5
+
+---
 
 The differences between the species' variables is best represented by the following box plots:
 
@@ -288,10 +292,18 @@ Finally, the pairplot and correlation matrix for each individual species is show
 
 
 ## 5. Discussion
+The IDS offers a large and complete set of continuous data that allows for numerous statistical tests to take place. The simple descriptive and Pearson correlation tests performed in this summary provide some insight into the extent of the data. 
+
+Applying a general rule of thumb that 95% of observations of a normal distribution lie within 2 SD of the mean, it is evident from the initial descriptive statistics of the sample that the observations lie within a normal distribution. The plotted histograms would support this. However, there is a bimodal distribution evident in both petal length and petal width. On further examination of the data by species, one notes that a single species is responsible for this bimodal appearance, namely *I. setosa* (see Sample Pairplot above). This is confirmed by the boxplots of the variables by species, in which there is no overlap between *I. setosa* and the other two species for petal length and petal width. It is this distinct difference of these two variables within *I. setosa* that make it distinguishable from the other two Iris species.  
+
+The correlation coefficients for the sample show large associations (> 0.5 according to [Cohen's standard](https://www.statisticssolutions.com/correlation-pearson-kendall-spearman/)) between sepal length, and petal length (0.87) and petal width (0.82). The strong association between petal length and petal width is to be expected (0.96), given the interdependence of the two variables. However, apart from *I. versicolor*, these strong associations are not noted throughout the other species. Indeed, these associations are poor in *I. setosa* (< 0.3), while only sepal length and petal length show large associations (> 0.5) in *I. virginica*. The size of these associations is clear when one examines the scattering of data points on the pairplot charts for these variables by species. Of note, *I. versicolor* is the only species that shows large associations (> 0.5) between all variables.  
+
 
 ## 6. What others have done with the data set
+The IDS is a staple dataset for machine learning and pattern recognition. It has been used as a [case study](https://www.ibm.com/communities/analytics/watson-analytics-blog/watson-analytics-use-case-the-iris-data-set/) to show the capabilities of IBM's Watson Analytics, and serves as a [learning tool](https://archive.ics.uci.edu/ml/datasets/iris) for machine learning. Indeed, the dataset has found its way into several textbooks about [advanced statistical analysis and data mining](https://www.sciencedirect.com/topics/mathematics/length-petal), where it has been used to explain various decision trees and predictive tools. A good example of these techniques and the use of the IDS to explain them can be found on [Rafael Santos' blog](http://www.lac.inpe.br/~rafael.santos/Docs/R/CAP394/WholeStory-Iris.html). The distinct differences in petal length and petal width across species, and the resultant clustering into two groups (*I. setosa* vs *I. versicolor* and *I. virginica*) as discussed above, together with the completeness of the dataset, make the IDS so appealing as a test dataset for machine learning and data mining.
 
 ## 7. Conclusion
+
 
 ## 8. References
 - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
@@ -299,6 +311,7 @@ Finally, the pairplot and correlation matrix for each individual species is show
 - https://www.britannica.com/biography/Ronald-Aylmer-Fisher [Accessed 2019 April 2]
 - https://www.famousscientists.org/ronald-fisher/ [Accessed 2 April 2019]
 - Owen, ARG. (1962) 'An Appreciation of the Life and Work of Sir Ronald Aylmer Fisher', *Journal of the Royal Statistical    Society.   Series D (The Statistician)*, Vol. 12, No. 4, pp. 313-319
+- https://www.statisticssolutions.com/correlation-pearson-kendall-spearman/
 - Coding references contained in **analysis.py**
 
 ## Author
