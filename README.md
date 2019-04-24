@@ -131,21 +131,31 @@ The next output is a set of descriptive statistics (mean, standard deviation (SD
 
 These results are presented graphically in the following histograms:
 
+---
+
 **Sepal Length, Ungrouped**
 
 ![Sepal Length](images/sepal_length.png)
+
+---
 
 **Sepal Width, Ungrouped**
 
 ![Sepal Width](images/sepal_width.png)
 
+---
+
 **Petal Length, Ungrouped**
 
 ![Petal Length](images/petal_length.png)
 
+---
+
 **Petal Width, Ungrouped**
 
 ![Petal Width](images/petal_width.png)
+
+---
 
 The descriptive statistices grouped by plant species are as follows:
 
@@ -159,8 +169,9 @@ The descriptive statistices grouped by plant species are as follows:
 |Max  |   5.8  |  4.4 |   1.9  |   0.6
 
 **Descriptive statistics, *I. versicolor* (values rounded to 1 decimal spaces)**
+
 ||Sepal Length | Sepal Width | Petal Length | Petal Width
-|--- | --- | --- | ---
+|:---|---: | ---: | ---: | ---:
 |Mean |   5.9  |  3.4 |   1.5  |   0.2
 |SD   |   0.5  |  0.4 |   0.2  |   0.1
 |Min  |   4.9  |  2.3 |   1.0  |   0.1
