@@ -109,51 +109,57 @@ All images created are saved into an **'/images'** subdirectory if the necessary
 As already mentioned, there are 5 data points for each observation, totalling 750 data points in total for all 150 observations. The initial check to show whether any data is missing reveals that all data points are present:
 
 **Missing values in data set per variable:**
---- | ---
-sepal_length  |0
-sepal_width   |0
-petal_length  |0
-petal_width   |0
-species       |0
+|--- | ---
+|sepal_length  |0
+|sepal_width   |0
+|petal_length  |0
+|petal_width   |0
+|species       |0
 
 The next output is a set of descriptive statistics (mean, standard deviation (SD), min, max) for the whole sample. The program also outputs count and quartiles (not shown):
 **Descriptive statistics, ungrouped (values rounded to 1 decimal space)**
-Sepal Length | Sepal Width | Petal Length | Petal Width
---- | --- | --- | ---
-Mean    |   5.8   |  3.1 |   3.8  |   1.2
-SD      |   0.8   |  0.4 |   1.8  |   0.8
-Min     |   4.3   |  2.0 |   1.0  |   0.1
-Max     |   7.9   |  4.4 |   6.9  |   2.5
+
+|Sepal Length | Sepal Width | Petal Length | Petal Width
+|--- | --- | --- | ---
+|Mean    |   5.8   |  3.1 |   3.8  |   1.2
+|SD      |   0.8   |  0.4 |   1.8  |   0.8
+|Min     |   4.3   |  2.0 |   1.0  |   0.1
+|Max     |   7.9   |  4.4 |   6.9  |   2.5
 
 These results are presented graphically in the following histograms:
 **Sepal Length, Ungrouped**
+
 ![Sepal Length](images/sepal_length.png)
 
 **Sepal Width, Ungrouped**
+
 ![Sepal Width](images/sepal_width.png)
 
 **Petal Length, Ungrouped**
+
 ![Petal Length](images/petal_length.png)
 
 **Petal Width, Ungrouped**
+
 ![Petal Width](images/petal_width.png)
 
 The descriptive statistices grouped by plant species are as follows:
 **Descriptive statistics, *I. setosa* (values rounded to 1 decimal spaces)**
-Sepal Length | Sepal Width | Petal Length | Petal Width
---- | --- | --- | ---
-Mean |   5.0  |  3.4 |   1.5  |   0.2
-SD   |   0.4  |  0.4 |   0.2  |   0.1
-Min  |   4.3  |  2.3 |   1.0  |   0.1
-Max  |   5.8  |  4.4 |   1.9  |   0.6
+
+|Sepal Length | Sepal Width | Petal Length | Petal Width
+|--- | --- | --- | ---
+|Mean |   5.0  |  3.4 |   1.5  |   0.2
+|SD   |   0.4  |  0.4 |   0.2  |   0.1
+|Min  |   4.3  |  2.3 |   1.0  |   0.1
+|Max  |   5.8  |  4.4 |   1.9  |   0.6
 
 **Descriptive statistics, *I. versicolor* (values rounded to 1 decimal spaces)**
-Sepal Length | Sepal Width | Petal Length | Petal Width
---- | --- | --- | ---
-Mean |   5.9  |  3.4 |   1.5  |   0.2
-SD   |   0.5  |  0.4 |   0.2  |   0.1
-Min  |   4.9  |  2.3 |   1.0  |   0.1
-Max  |   7.0  |  4.4 |   1.9  |   0.6
+|Sepal Length | Sepal Width | Petal Length | Petal Width
+|--- | --- | --- | ---
+|Mean |   5.9  |  3.4 |   1.5  |   0.2
+|SD   |   0.5  |  0.4 |   0.2  |   0.1
+|Min  |   4.9  |  2.3 |   1.0  |   0.1
+|Max  |   7.0  |  4.4 |   1.9  |   0.6
 
   
 ## 5. Discussion
@@ -164,6 +170,7 @@ Max  |   7.0  |  4.4 |   1.9  |   0.6
 
 ## 8. References
 - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+- https://help.github.com/en/articles/organizing-information-with-tables
 - https://www.britannica.com/biography/Ronald-Aylmer-Fisher [Accessed 2019 April 2]
 - https://www.famousscientists.org/ronald-fisher/ [Accessed 2 April 2019]
 - Owen, ARG. (1962) 'An Appreciation of the Life and Work of Sir Ronald Aylmer Fisher', *Journal of the Royal Statistical    Society.   Series D (The Statistician)*, Vol. 12, No. 4, pp. 313-319
