@@ -6,8 +6,10 @@ Final assignment for 2019, 52445 "Programming and Scripting" module, Higher Dipl
 2. [What is the Iris Data Set?](https://github.com/thomas-roux/iris_analysis#2-what-is-the-iris-data-set)
 3. [What does it contain?](https://github.com/thomas-roux/iris_analysis#3-what-does-it-contain)
 4. [Findings of Interest](https://github.com/thomas-roux/iris_analysis#4-findings-of-interest)
-5. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#5-what-others-have-done-with-the-data-set)
-6. [Conclusion](https://github.com/thomas-roux/iris_analysis#6-conclusion)
+5. [Discussion](https://github.com/thomas-roux/iris_analysis#4-discussion)
+6. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#5-what-others-have-done-with-the-data-set)
+7. [Conclusion](https://github.com/thomas-roux/iris_analysis#6-conclusion)
+8. [References](https://github.com/thomas-roux/iris_analysis#6-references)
 
 
 ## 1. Who was Fisher?
@@ -26,11 +28,6 @@ Ronald Aylmer Fisher was born in London, England in 1890. He went on to become a
 * 1952 -	Knighted by the Queen
 
 Sir Ronald Aylmer Fisher died in 1962, having rightly earned himself a place as one of the imminent scientists of the 20th century.
-
-**Sources:**    
-- https://www.britannica.com/biography/Ronald-Aylmer-Fisher [Accessed 2019 April 2]
-- https://www.famousscientists.org/ronald-fisher/ [Accessed 2 April 2019]
-- Owen, ARG. (1962) 'An Appreciation of the Life and Work of Sir Ronald Aylmer Fisher', *Journal of the Royal Statistical    Society.   Series D (The Statistician)*, Vol. 12, No. 4, pp. 313-319
 
 ## 2. What is the Iris Data Set?
 The Iris Data Set was first used by Fisher in his 1936 [publication](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1936.tb02137.x) 'The Use of Multiple Measurements in Taxonomic Problems' in *Annals of Human Genetics*, Vol 7, Issue 2, pg179-188, where Fisher used the data as an example of linear function discrimination. Although Fisher spent time conducting plant-breeding expirements at the Rothamsted Experimental Station, he did not collect this data himself, but rather made use of data collected by [Dr E Anderson](https://en.wikipedia.org/wiki/Edgar_Anderson). 
@@ -61,14 +58,14 @@ To the eye, there does not appear to be much difference between the iris flower 
 It is this grouping of the IDS into two distinct clusters that makes this a useful data set for [explaining](https://en.wikipedia.org/wiki/Iris_flower_data_set#cite_note-anderson35-3) data mining techniques. 
 
 ## 3. What does it contain?
-As already mentioned, the IDS contains 4 measurements for 50 flowers across 3 plant species, giving a total of 600 data points (4 x 50 x 3 = 600). Apart from species name, which is nominal data, all other data is interval data. The data set from Fisher's original paper is presented below:
+As already mentioned, the IDS contains 4 measurements for 50 flowers across 3 plant species, giving a total of 600 data points, not including Iris species (4 x 50 x 3 = 600). Apart from species name, which is nominal data, all other data is interval data. The data set from Fisher's original paper is presented below:
 
-![Original Iris Data Set](iris_data_table.png)
+![Original Iris Data Set](images/iris_data_table.png)
 
 ## 4. Findings of interest
 This next section will look at the Python script used to analyse the data, as well as some results of the analysis. The data set used for this analysis was downloaded from curran's github [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv). 
 
-A 'results.txt' file contains all the output as displayed on the terminal when running the program. This was created by using the `open()` function as explained [here](https://stackoverflow.com/a/36571602). The `file=f` statements have subsequently been removed from the program script.
+A ['results.txt'](https://github.com/thomas-roux/iris_analysis/blob/master/results.txt) file contains all the output as displayed on the terminal when running the program. This was created by using the `open()` function as explained [here](https://stackoverflow.com/a/36571602). The `file=f` statements have subsequently been removed from the program script.
 
 ### Python Script
 #### What it needs
@@ -102,18 +99,74 @@ The program then prints the following descriptive statistics:
 - minimum
 - maximum
 - quartiles 
-of the whole sample and of each Iris species. In addition, it plots a histogram with distribution curve of all variables for both the entire sample and each Iris species in turn. These descriptive statistics can then be used to make an informed decision on normality of data distribution for further inferential statistics.
+of the whole sample and of each Iris species. In addition, it plots a histogram of all variables for the entire sample. It also plots a boxplot of each variable across each Iris species in turn. These descriptive statistics can then be used to make an informed decision on normality of data distribution for further inferential statistics.
 
 The program then displays a scatterplot of all variables to one another for the whole sample, and again for each species in turn. Finally, a correlation matrix of each variable for the entire sample, and between each species, is determined. 
 
 All images created are saved into an **'/images'** subdirectory if the necessary code is active (see above).
 
 ### Results
+As already mentioned, there are 5 data points for each observation, totalling 750 data points in total for all 150 observations. The initial check to show whether any data is missing reveals that all data points are present:
 
+**Missing values in data set per variable:**
+--- | ---
+sepal_length  |0
+sepal_width   |0
+petal_length  |0
+petal_width   |0
+species       |0
 
-## 5. What others have done with the data set
+The next output is a set of descriptive statistics (mean, standard deviation (SD), min, max) for the whole sample. The program also outputs count and quartiles (not shown):
+**Descriptive statistics, ungrouped (values rounded to 1 decimal space)**
+Sepal Length | Sepal Width | Petal Length | Petal Width
+--- | --- | --- | ---
+Mean    |   5.8   |  3.1 |   3.8  |   1.2
+SD      |   0.8   |  0.4 |   1.8  |   0.8
+Min     |   4.3   |  2.0 |   1.0  |   0.1
+Max     |   7.9   |  4.4 |   6.9  |   2.5
 
-## 6. Conclusion
+These results are presented graphically in the following histograms:
+**Sepal Length, Ungrouped**
+![Sepal Length](images/sepal_length.png)
+
+**Sepal Width, Ungrouped**
+![Sepal Width](images/sepal_width.png)
+
+**Petal Length, Ungrouped**
+![Petal Length](images/petal_length.png)
+
+**Petal Width, Ungrouped**
+![Petal Width](images/petal_width.png)
+
+The descriptive statistices grouped by plant species are as follows:
+**Descriptive statistics, *I. setosa* (values rounded to 1 decimal spaces)**
+Sepal Length | Sepal Width | Petal Length | Petal Width
+--- | --- | --- | ---
+Mean |   5.0  |  3.4 |   1.5  |   0.2
+SD   |   0.4  |  0.4 |   0.2  |   0.1
+Min  |   4.3  |  2.3 |   1.0  |   0.1
+Max  |   5.8  |  4.4 |   1.9  |   0.6
+
+**Descriptive statistics, *I. versicolor* (values rounded to 1 decimal spaces)**
+Sepal Length | Sepal Width | Petal Length | Petal Width
+--- | --- | --- | ---
+Mean |   5.9  |  3.4 |   1.5  |   0.2
+SD   |   0.5  |  0.4 |   0.2  |   0.1
+Min  |   4.9  |  2.3 |   1.0  |   0.1
+Max  |   7.0  |  4.4 |   1.9  |   0.6
+
+  
+## 5. Discussion
+
+## 6. What others have done with the data set
+
+## 7. Conclusion
+
+## 8. References
+- https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+- https://www.britannica.com/biography/Ronald-Aylmer-Fisher [Accessed 2019 April 2]
+- https://www.famousscientists.org/ronald-fisher/ [Accessed 2 April 2019]
+- Owen, ARG. (1962) 'An Appreciation of the Life and Work of Sir Ronald Aylmer Fisher', *Journal of the Royal Statistical    Society.   Series D (The Statistician)*, Vol. 12, No. 4, pp. 313-319
+- Coding references contained in **analysis.py**
 
 ## Author
-

@@ -20,24 +20,11 @@ data = pd.read_csv('data/irisdataset.csv', delimiter = ',')
 # Plot pairplot table
 
 # Plot box whiskers
-# sb.catplot(x = "species", y = "sepal_length", kind = box, data = data)
-# plt.show()
 
-# https://stackoverflow.com/a/29432741
-import os
-
-os.mkdir('images')
-
-grouped = data.groupby(['species'])
-for name, group in grouped:
-    print(name)
-    for column in group:
-        if column == 'species':
-            continue
-        x = group[column]
-        sb.distplot(x, bins = 10, kde = False)
-        plt.title("Histogram of Iris " + str(name) + "'s " + str(column))
-        plt.xlabel(str(column) + " in centimetres.")
-        plt.ylabel("Count")
-        plt.savefig('images/{}'.format(str(name) + str(column)))
-        plt.show()
+for column in data:
+    if column == 'species':
+        continue
+    x = data[column]
+    sb.boxplot(x = 'species', y = column, data = data).set_title("Boxplot of {} across species".format(column))
+    # plt.savefig('images/{}'.format(str(name) + str(column)))
+    plt.show()
