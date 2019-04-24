@@ -218,6 +218,8 @@ The differences between the species' variables is best represented by the follow
 
 The correlation between the variables is represented in the following diagram and correlation matrix, which highlights the differences between species through different colors: 
 
+---
+
 **Correlation Pairplot, Differentiated by Species**
 
 ![Sample Pairplot](images/pairplotall.png)
@@ -232,8 +234,11 @@ The correlation between the variables is represented in the following diagram an
 |Petal Length |  0.87 | -0.42 |   1    |  0.96
 |Petal Width  |  0.82 | -0.35 |  0.96  |   1
 
+---
 
 Finally, the pairplot and correlation matrix for each individual species is shown below:
+
+---
 
 **Correlation Pairplot *I. setosa***
 
@@ -249,6 +254,7 @@ Finally, the pairplot and correlation matrix for each individual species is show
 |Petal Length |  0.26 | 0.18  |   1    |  0.31
 |Petal Width  |  0.28 | 0.28  |  0.31  |   1
 
+---
 
 **Correlation Pairplot, *I. versicolor***
 
@@ -264,7 +270,8 @@ Finally, the pairplot and correlation matrix for each individual species is show
 |Petal Length |  0.75 | 0.56  |   1    |  0.79
 |Petal Width  |  0.55 | 0.66  |  0.79  |   1
 
-  
+---
+
 **Correlation Pairplot, *I. virginica***
 
 ![I. virginica Pairplot](images/virginica.png)
