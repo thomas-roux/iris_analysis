@@ -168,6 +168,7 @@ The descriptive statistices grouped by plant species are as follows:
 |Min  |   4.3  |  2.3 |   1.0  |   0.1
 |Max  |   5.8  |  4.4 |   1.9  |   0.6
 
+
 **Descriptive statistics, *I. versicolor* (values rounded to 1 decimal spaces)**
 
 ||Sepal Length | Sepal Width | Petal Length | Petal Width
@@ -177,6 +178,15 @@ The descriptive statistices grouped by plant species are as follows:
 |Min  |   4.9  |  2.3 |   1.0  |   0.1
 |Max  |   7.0  |  4.4 |   1.9  |   0.6
 
+
+**Descriptive statistics, *I. virginica* (values rounded to 1 decimal spaces)**
+
+||Sepal Length | Sepal Width | Petal Length | Petal Width
+|:---|---: | ---: | ---: | ---:
+|Mean |   5.9  |  3.4 |   1.5  |   0.2
+|SD   |   0.5  |  0.4 |   0.2  |   0.1
+|Min  |   4.9  |  2.3 |   1.0  |   0.1
+|Max  |   7.0  |  4.4 |   1.9  |   0.6
   
 ## 5. Discussion
 
