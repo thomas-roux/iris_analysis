@@ -109,7 +109,8 @@ All images created are saved into an **'/images'** subdirectory if the necessary
 As already mentioned, there are 5 data points for each observation, totalling 750 data points in total for all 150 observations. The initial check to show whether any data is missing reveals that all data points are present:
 
 **Missing values in data set per variable:**
-|--- | ---
+
+|:--- | ---:
 |sepal_length  |0
 |sepal_width   |0
 |petal_length  |0
@@ -119,8 +120,8 @@ As already mentioned, there are 5 data points for each observation, totalling 75
 The next output is a set of descriptive statistics (mean, standard deviation (SD), min, max) for the whole sample. The program also outputs count and quartiles (not shown):
 **Descriptive statistics, ungrouped (values rounded to 1 decimal space)**
 
-|Sepal Length | Sepal Width | Petal Length | Petal Width
-|--- | --- | --- | ---
+||Sepal Length | Sepal Width | Petal Length | Petal Width
+|:---|---: | ---: | ---: | ---:
 |Mean    |   5.8   |  3.1 |   3.8  |   1.2
 |SD      |   0.8   |  0.4 |   1.8  |   0.8
 |Min     |   4.3   |  2.0 |   1.0  |   0.1
@@ -146,15 +147,15 @@ These results are presented graphically in the following histograms:
 The descriptive statistices grouped by plant species are as follows:
 **Descriptive statistics, *I. setosa* (values rounded to 1 decimal spaces)**
 
-|Sepal Length | Sepal Width | Petal Length | Petal Width
-|--- | --- | --- | ---
+||Sepal Length | Sepal Width | Petal Length | Petal Width
+|:---|---: | ---: | ---: | ---:
 |Mean |   5.0  |  3.4 |   1.5  |   0.2
 |SD   |   0.4  |  0.4 |   0.2  |   0.1
 |Min  |   4.3  |  2.3 |   1.0  |   0.1
 |Max  |   5.8  |  4.4 |   1.9  |   0.6
 
 **Descriptive statistics, *I. versicolor* (values rounded to 1 decimal spaces)**
-|Sepal Length | Sepal Width | Petal Length | Petal Width
+||Sepal Length | Sepal Width | Petal Length | Petal Width
 |--- | --- | --- | ---
 |Mean |   5.9  |  3.4 |   1.5  |   0.2
 |SD   |   0.5  |  0.4 |   0.2  |   0.1
