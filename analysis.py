@@ -11,7 +11,7 @@ import os
 
 # Create a subdirectory for images
 # https://smallbusiness.chron.com/make-folders-subfolders-python-38545.html
-os.mkdir('images')
+# os.mkdir('images')
 
 # Increases output display to show all columns and rows
 # https://pandas.pydata.org/pandas-docs/stable/user_guide/options.html
@@ -49,7 +49,7 @@ for column in data:
     plt.ylabel("Count")
 # Save Image
 # https://stackoverflow.com/a/9890599
-    plt.savefig('images/{}'.format(str(column)))
+    # plt.savefig('images/{}'.format(str(column)))
     plt.show()
 
 # Prints a boxplot of each variable, grouped by species, with title - https://stackoverflow.com/a/42409861
@@ -59,7 +59,7 @@ for column in data:
         continue
     x = data[column]
     sb.boxplot(x = 'species', y = column, data = data).set_title("Boxplot of {} across species".format(column))
-    plt.savefig('images/boxplot{}'.format(column))
+    # plt.savefig('images/boxplot{}'.format(column))
     plt.show()
         
 
@@ -70,7 +70,7 @@ for column in data:
 g = sb.pairplot(data = data, hue = "species")
 plt.subplots_adjust(top=0.9)
 g.fig.suptitle("Pairplot of variables, whole sample")
-plt.savefig('images/pairplotall.png')
+# plt.savefig('images/pairplotall.png')
 plt.show(g)
 
 # Displays a scatterplot of all variables with each other, grouped by species
@@ -80,7 +80,7 @@ for name, group in grouped:
     a = sb.pairplot(group)
     plt.subplots_adjust(top=0.9)
     a.fig.suptitle("Pairplot of variables, " + str(name))
-    plt.savefig('images/{}'.format(str(name)))
+    # plt.savefig('images/{}'.format(str(name)))
     plt.show(a)
 
 # Presents a correlation matrix of each variable for whole sample

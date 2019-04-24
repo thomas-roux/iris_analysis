@@ -173,21 +173,113 @@ The descriptive statistices grouped by plant species are as follows:
 
 ||Sepal Length | Sepal Width | Petal Length | Petal Width
 |:---|---: | ---: | ---: | ---:
-|Mean |   5.9  |  3.4 |   1.5  |   0.2
-|SD   |   0.5  |  0.4 |   0.2  |   0.1
-|Min  |   4.9  |  2.3 |   1.0  |   0.1
-|Max  |   7.0  |  4.4 |   1.9  |   0.6
+|Mean |   5.9  |  2.8 |   4.3  |   1.3
+|SD   |   0.5  |  0.3 |   0.5  |   0.2
+|Min  |   4.9  |  2.0 |   3.0  |   1.0
+|Max  |   7.0  |  3.4 |   5.1  |   1.8
 
 
 **Descriptive statistics, *I. virginica* (values rounded to 1 decimal spaces)**
 
 ||Sepal Length | Sepal Width | Petal Length | Petal Width
 |:---|---: | ---: | ---: | ---:
-|Mean |   5.9  |  3.4 |   1.5  |   0.2
-|SD   |   0.5  |  0.4 |   0.2  |   0.1
-|Min  |   4.9  |  2.3 |   1.0  |   0.1
-|Max  |   7.0  |  4.4 |   1.9  |   0.6
+|Mean |   6.6  |  3.0 |   5.6  |   2.0
+|SD   |   0.6  |  0.3 |   0.6  |   0.3
+|Min  |   4.9  |  2.2 |   4.5  |   1.4
+|Max  |   7.9  |  3.8 |   6.9  |   2.5
+
+The differences between the species' variables is best represented by the following box plots:
+
+---
+
+**Sepal Length**
+
+![Sepal Length Boxplot](images/boxplotsepal_length.png)
+
+---
+
+**Sepal Width**
+
+![Sepal Width Boxplot](images/boxplotsepal_width.png)
+
+---
+
+**Petal Length**
+
+![Petal Length Boxplot](images/boxplotpetal_length.png)
+
+---
+
+**Petal Width**
+
+![Petal Width Boxplot](images/boxplotpetal_width.png)
+
+---
+
+The correlation between the variables is represented in the following diagram and correlation matrix, which highlights the differences between species through different colors: 
+
+**Correlation Pairplot, Differentiated by Species**
+
+![Sample Pairplot](images/pairplotall.png)
+
+
+**Correlation Matrix, Entire Sample (rounded to 2 decimals)**
+
+||Sepal Length | Sepal Width | Petal Length | Petal Width
+|:---|---:|---:|---:|---:
+|Sepal Length |    1  | -0.11 |  0.87  |  0.82
+|Sepal Width  | -0.11 |   1   | -0.42  | -0.36
+|Petal Length |  0.87 | -0.42 |   1    |  0.96
+|Petal Width  |  0.82 | -0.35 |  0.96  |   1
+
+
+Finally, the pairplot and correlation matrix for each individual species is shown below:
+
+**Correlation Pairplot *I. setosa***
+
+![I. setosa Pairplot](images/setosa.png)
+
+
+**Correlation Matrix, *I. setosa***
+
+||Sepal Length | Sepal Width | Petal Length | Petal Width
+|:---|---:|---:|---:|---:
+|Sepal Length |    1  | 0.75  |  0.26  |  0.28
+|Sepal Width  |  0.75 |   1   |  0.18  |  0.28
+|Petal Length |  0.26 | 0.18  |   1    |  0.31
+|Petal Width  |  0.28 | 0.28  |  0.31  |   1
+
+
+**Correlation Pairplot, *I. versicolor***
+
+![I. versicolot Pairplot](images/versicolor.png)
+
+
+**Correlation Matrix, *I. versicolor***
+
+||Sepal Length | Sepal Width | Petal Length | Petal Width
+|:---|---:|---:|---:|---:
+|Sepal Length |    1  | 0.53  |  0.75  |  0.55
+|Sepal Width  |  0.53 |   1   |  0.56  |  0.66
+|Petal Length |  0.75 | 0.56  |   1    |  0.79
+|Petal Width  |  0.55 | 0.66  |  0.79  |   1
+
   
+**Correlation Pairplot, *I. virginica***
+
+![I. virginica Pairplot](images/virginica.png)
+
+
+**Correlation Matrix, *I. virginica***
+
+||Sepal Length | Sepal Width | Petal Length | Petal Width
+|:---|---:|---:|---:|---:
+|Sepal Length |    1  | 0.45  |  0.86  |  0.28
+|Sepal Width  |  0.46 |   1   |  0.40  |  0.54
+|Petal Length |  0.86 | 0.40  |   1    |  0.32
+|Petal Width  |  0.28 | 0.54  |  0.32  |   1
+
+
 ## 5. Discussion
 
 ## 6. What others have done with the data set
