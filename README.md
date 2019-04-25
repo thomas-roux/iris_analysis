@@ -82,7 +82,7 @@ The code automatically creates an **'/images'** subdirectory when saving images.
 
 Line 14:
 ```python
-os.mkidr('images')
+os.mkdir('images')
 ```
 
 Lines 52, 62, 73, 83:
@@ -159,7 +159,7 @@ These results are presented graphically in the following histograms:
 
 ---
 
-The descriptive statistices grouped by plant species are as follows:
+The descriptive statistics grouped by plant species are as follows:
 
 **Descriptive statistics, *I. setosa* (values rounded to 1 decimal spaces)**
 
