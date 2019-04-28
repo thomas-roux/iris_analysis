@@ -7,9 +7,9 @@ Final assignment for 2019, 52445 "Programming and Scripting" module, Higher Dipl
 3. [What does it contain?](https://github.com/thomas-roux/iris_analysis#3-what-does-it-contain)
 4. [Findings of Interest](https://github.com/thomas-roux/iris_analysis#4-findings-of-interest)
 
-    4.1 [Python Script](https://github.com/thomas-roux/iris_analysis#python-script)
+    4.1 [Python Script](https://github.com/thomas-roux/iris_analysis#41-python-script)
     
-    4.2 [Results](https://github.com/thomas-roux/iris_analysis#results)
+    4.2 [Results](https://github.com/thomas-roux/iris_analysis#42-results)
 
 5. [Discussion](https://github.com/thomas-roux/iris_analysis#5-discussion)
 6. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#6-what-others-have-done-with-the-data-set)
