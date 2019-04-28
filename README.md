@@ -8,10 +8,11 @@ Final assignment for 2019, 52445 "Programming and Scripting" module, Higher Dipl
 4. [Findings of Interest](https://github.com/thomas-roux/iris_analysis#4-findings-of-interest)
 
     4.1 [Python Script](https://github.com/thomas-roux/iris_analysis#python-script)
+
+    4.1.1 [What it needs](https://github.com/thomas-roux/iris_analysis#what-it-needs)
+    4.1.2 [What it does](https://github.com/thomas-roux/iris_analysis#what-it-does)
     
-        4.1.1 [What it needs](https://github.com/thomas-roux/iris_analysis#what-it-needs)
-        4.1.2 [What it does](https://github.com/thomas-roux/iris_analysis#what-it-does)
-        4.1.3 [Results](https://github.com/thomas-roux/iris_analysis#results)
+    4.2 [Results](https://github.com/thomas-roux/iris_analysis#results)
 
 5. [Discussion](https://github.com/thomas-roux/iris_analysis#5-discussion)
 6. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#6-what-others-have-done-with-the-data-set)
@@ -74,8 +75,8 @@ This next section will look at the Python script used to analyse the data, as we
 
 A ['results.txt'](https://github.com/thomas-roux/iris_analysis/blob/master/results.txt) file contains all the output as displayed on the terminal when running the program. This was created by using the `open()` function as explained [here](https://stackoverflow.com/a/36571602). The `file=f` statements have subsequently been removed from the program script.
 
-### Python Script
-#### What it needs
+### 4.1 Python Script
+#### 4.1.1 What it needs
 In order to run the Python script, you will need to install Python. Python is freely available, and details on how to install and run Python on your native OS are available [here](https://docs.python.org/3/using/index.html). In addition, you will need to download and install [pandas](http://pandas.pydata.org/pandas-docs/stable/install.html#installing-pandas), [NumPy](http://www.numpy.org/), [matplotlib](https://matplotlib.org/users/installing.html), and [seaborn](https://seaborn.pydata.org/index.html).
 
 Alternatively, you can download the free open-source [Anaconda Distribution](https://www.anaconda.com/distribution/) package that includes over 1,500 packages in addition to the latest version of Python. This would preclude the need to download additional packages as mentioned above.
@@ -97,7 +98,7 @@ Lines 52, 62, 73, 83:
 plt.savefig('images/<filename>')
 ```
 
-#### What it does
+#### 4.1.2 What it does
 First, the program determines if there is any missing data by identifying standard terms used by pandas for each variable. 
 
 The program then prints the following descriptive statistics:
@@ -115,7 +116,7 @@ All images created are saved into an **'/images'** subdirectory if the necessary
 
 ---
 
-### Results
+### 4.2 Results
 As already mentioned, there are 5 data points for each observation, totalling 750 data points in total for all 150 observations. The initial check to show whether any data is missing reveals that all data points are present:
 
 **Missing values in data set per variable:**
