@@ -9,8 +9,9 @@ Final assignment for 2019, 52445 "Programming and Scripting" module, Higher Dipl
 
     4.1 [Python Script](https://github.com/thomas-roux/iris_analysis#python-script)
 
-    4.1.1 [What it needs](https://github.com/thomas-roux/iris_analysis#what-it-needs)
-    4.1.2 [What it does](https://github.com/thomas-roux/iris_analysis#what-it-does)
+        4.1.1 [What it needs](https://github.com/thomas-roux/iris_analysis#what-it-needs)
+
+        4.1.2 [What it does](https://github.com/thomas-roux/iris_analysis#what-it-does)
     
     4.2 [Results](https://github.com/thomas-roux/iris_analysis#results)
 
