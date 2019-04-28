@@ -6,6 +6,10 @@ Final assignment for 2019, 52445 "Programming and Scripting" module, Higher Dipl
 2. [What is the Iris Data Set?](https://github.com/thomas-roux/iris_analysis#2-what-is-the-iris-data-set)
 3. [What does it contain?](https://github.com/thomas-roux/iris_analysis#3-what-does-it-contain)
 4. [Findings of Interest](https://github.com/thomas-roux/iris_analysis#4-findings-of-interest)
+4.1 [Python Script](https://github.com/thomas-roux/iris_analysis#python-script)
+4.1.1 [What it needs](https://github.com/thomas-roux/iris_analysis#what-it-needs)
+4.1.2 [What it does](https://github.com/thomas-roux/iris_analysis#what-it-does)
+4.1.3 [Results](https://github.com/thomas-roux/iris_analysis#results)
 5. [Discussion](https://github.com/thomas-roux/iris_analysis#5-discussion)
 6. [What others have done with the data set](https://github.com/thomas-roux/iris_analysis#6-what-others-have-done-with-the-data-set)
 7. [Conclusion](https://github.com/thomas-roux/iris_analysis#7-conclusion)
@@ -73,7 +77,7 @@ In order to run the Python script, you will need to install Python. Python is fr
 
 Alternatively, you can download the free open-source [Anaconda Distribution](https://www.anaconda.com/distribution/) package that includes over 1,500 packages in addition to the latest version of Python. This would preclude the need to download additional packages as mentioned above.
 
-Before running the script in Python, make sure you have downloaded the IDS from curran's github [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv). Save the dataset as **irisdataset.csv** in a subfolder **data** within the same folder as the script to ensure it executes correctly. If you prefer, you can save the dataset in any folder with any ***.csv** filename - just make sure to change the destination folder in line 24 of the analysis.py script before proceeding:
+Before running the script in Python, make sure you have downloaded the IDS from curran's github [repository](https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv). Save the dataset as **irisdataset.csv** in a subfolder **data** within the same folder as the script to ensure it executes correctly. If you prefer, you can save the dataset in any folder with any ***.csv** filename - just make sure to change the destination folder in line 24 of the **analysis.py** script before proceeding:
 ```python
 data = pd.read_csv('data/irisdataset.csv', delimiter = ',')
 ```
@@ -99,6 +103,7 @@ The program then prints the following descriptive statistics:
 - minimum
 - maximum
 - quartiles 
+
 of the whole sample and of each Iris species. In addition, it plots a histogram of all variables for the entire sample. It also plots a boxplot of each variable across each Iris species in turn. These descriptive statistics can then be used to make an informed decision on normality of data distribution for further inferential statistics.
 
 The program then displays a scatterplot of all variables to one another for the whole sample, and again for each species in turn. Finally, a Pearson correlation matrix of each variable for the entire sample, and for each species in turn, is determined. 
@@ -297,7 +302,7 @@ The IDS offers a large and complete set of continuous data that allows for numer
 
 Applying a general rule of thumb that 95% of observations of a normal distribution lie within 2 SD of the mean, it is evident from the initial descriptive statistics of the sample that the observations lie within a normal distribution. The plotted histograms would support this. However, there is a bimodal distribution evident in both petal length and petal width. On further examination of the data by species, one notes that a single species is responsible for this bimodal appearance, namely *I. setosa* (see Whole Sample Pairplot above). This is confirmed by the boxplots of the variables by species, in which there is no overlap between *I. setosa* and the other two species for petal length and petal width. It is this distinct difference of these two variables within *I. setosa* that make it distinguishable from the other two Iris species.  
 
-The correlation coefficients for the sample show large associations (> 0.5 according to [Cohen's standard](https://www.statisticssolutions.com/correlation-pearson-kendall-spearman/)) between sepal length, and petal length (0.87) and petal width (0.82). The strong association between petal length and petal width is to be expected (0.96), given the interdependence of the two variables. However, apart from *I. versicolor*, these strong associations are not noted throughout the other species. Indeed, these associations are poor in *I. setosa* (< 0.3), while only sepal length and petal length show large associations (> 0.5) in *I. virginica*. The size of these associations is clear when one examines the scattering of data points on the pairplot charts for these variables by species. Of note, *I. versicolor* is the only species that shows large associations (> 0.5) between all variables.  
+The correlation coefficients for the sample show large associations (> 0.5 according to [Cohen's standard](https://www.statisticssolutions.com/correlation-pearson-kendall-spearman/)) between sepal length, and petal length (0.87) and petal width (0.82). The strong association between petal length and petal width is to be expected (0.96), given the interdependence of the two variables. However, apart from *I. versicolor*, these strong associations are not noted throughout the other species. Indeed, these associations are poor in *I. setosa* (< 0.3), while only sepal length and petal length show large associations (> 0.5) in *I. virginica*. The size of these associations is clear when one examines the scattering of data points on the pairplot charts for these variables by species. Of note, *I. versicolor* is the only species that shows large associations (> 0.5) between all variables. The fact that *I. versicolor* has overall large associations between its variables compared to *I. virginica* may be an avenue for future exploration in differentiating between the two species within this cluster.  
 
 
 ## 6. What others have done with the data set
@@ -314,7 +319,7 @@ The IDS is a complete set of 750 data points first made famous by a prolific sta
 - https://www.famousscientists.org/ronald-fisher/ [Accessed 2 April 2019]
 - Owen, ARG. (1962) 'An Appreciation of the Life and Work of Sir Ronald Aylmer Fisher', *Journal of the Royal Statistical    Society.   Series D (The Statistician)*, Vol. 12, No. 4, pp. 313-319
 - https://www.statisticssolutions.com/correlation-pearson-kendall-spearman/
-- Coding references contained in **analysis.py**
+- Coding references contained in [**analysis.py**](https://github.com/thomas-roux/iris_analysis/blob/master/analysis.py)
 
 **References included in text links**
 - https://gist.github.com/curran/a08a1080b88344b0c8a7#file-iris-csv
